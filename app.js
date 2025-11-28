@@ -159,11 +159,14 @@ function handleScan(scannedCode) {
 }
 
 function showCamera() {
-    document.querySelector(".camera-container").style.display ="block";
+    document.querySelector(".camera-container").style.display = "block";
+    document.querySelector(".scan-box").style.display = "block";
 }
 
 function hideCamera() {
     document.querySelector(".camera-container").style.display = "none";
+    document.querySelector(".scan-box").style.display = "none";
 }
+
 
 
