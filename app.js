@@ -144,6 +144,19 @@ function handleScan(scannedCode) {
                 items[i].purchased = true;
                 found = true;
                 updateUI();
+                // Play beep
+                const beep = new Audio("beep.mp3");
+                beep.play().catch(err => console.log("Audio play blocked:", err));
+
+                // Vibrate if supported
+                if (navigator.vibrate) {
+                    navigator.vibrate(200);
+                }
+
+                // Vibrate on supported devices
+                if (navigator.vibrate) {
+                    navigator.vibrate(200);
+                }
                 const purchasedItems = document.querySelectorAll("#purchasedList li");
                 const liToHighlight = purchasedItems[i];
                 liToHighlight.classList.add("highlight");
