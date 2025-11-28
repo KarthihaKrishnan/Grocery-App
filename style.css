@@ -75,14 +75,12 @@ h1 {
 
 .camera-container {
     display: none;
+    position: relative;
     width: 100%;
     max-width: 350px;
-    margin: 15px auto;
-    background: #000;
+    margin: 10px auto;
     border-radius: 10px;
-    padding: 0;
-    position: relative;
-    height: 260px; /* IMPORTANT: forces visible area */
+    overflow: hidden;
 }
 
 .scan-box {
@@ -109,5 +107,12 @@ h1 {
     display: none;
 }
 
-video { object-fit: cover; }
+video {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px;
+    object-fit: cover;
+    background: black;
+    transform: scaleX(-1); /* fixes sometimes flipped preview */
+}
 
