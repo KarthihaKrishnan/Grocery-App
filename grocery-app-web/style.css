@@ -1,0 +1,65 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: darkgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+#itemInput {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+#addItem {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#addItem:hover {
+    background-color: blueviolet;
+}
+
+#itemList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#itemList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 4px solid gray;
+}
+
+.purchased {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.8;
+}
+
+.highlight {
+    background-color: rgb(0, 255, 4);
+    transition: background-color 2s ease;
+}
